@@ -8,14 +8,7 @@
     <title>Home</title>
     <script>
         (function () {
-            try {
-                if (!window.sessionStorage.getItem('ama-name-intro-v13')) {
-                    document.documentElement.classList.add('intro-enabled');
-                }
-            } catch (error) {
-                document.documentElement.classList.add('intro-enabled');
-            }
-
+        
             try {
                 const savedLanguage = window.localStorage.getItem('ama-language');
                 if (savedLanguage === 'ar') {
